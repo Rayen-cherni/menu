@@ -1,31 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select with href</title>
-</head>
-<body>
-    <h3>Select a website:</h3>
-    <form id="websiteForm">
-        <select id="websiteSelect">
-            <option value="#">Select an option</option>
-            <option value="https://www.google.com">Google</option>
-            <option value="https://www.relead.tn">Relead</option>
-            <option value="https://www.github.com">GitHub</option>
-        </select>
-        <button type="button" id="goButton">Go</button>
-    </form>
-
-    <script>
-        document.getElementById('goButton').addEventListener('click', function () {
-            const url = document.getElementById('websiteSelect').value;
-            if (url !== "#") {
-                window.location.href = url;
-            } else {
-                alert('Please select a valid option.');
-            }
-        });
-    </script>
-</body>
-</html>
+<select id="serviceSelect" name="service">
+  <option value="" selected disabled>Veuillez sélectionner un service</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/services-peintre-interieur-exterieur/">Peintre intérieur extérieur deco…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/sol-parquet-marbre-carrelage/">Sol parquet marbre carrelage…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/plombier-qualifie-installation-reparation/">Plombier</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/services-electricien-professionnel/">Électricien</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/bricolage-petit-travaux/">Bricolage et petit travaux…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/maconnerie-construction-renovation/">Maçon construction rénovation piscine, toiture…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/alarme-securite-gardiennage-surveillance/">Alarme Sécurité gardiennage surveillance</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/jardinier-paysagiste-amenagement-exterieur/">Jardinier paysagiste aménagement extérieur</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/plaquiste-cloison-platrier/">Plaquiste cloison plâtrier</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/panneaux-solaires-photovoltaiques/">Panneau solaire photovoltaïque installation…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/diagnostic-performance-energetique-dpe/">Diganostiqueur auditeur énergétique (DPE)</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/traitement-des-nuisibles/">Traitement des nuisibles</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/service-nettoyage/">Nettoyage</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/installation-fenetres-stores/">Porte fenêtre store volet pergola véranda…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/pompe-a-chaleur-climatisation-chauffage/">Pompe à chaleur climatisation chauffage…</option>
+  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/menuisier-amenagement-dressing-cuisine/">Ferronnier portail serrurerie Menuisier aménagement dressing cuisine…</option>
+</select>
+<script>
+  document.getElementById('serviceSelect').addEventListener('change', function() {
+    if (this.value && this.value !== "") {
+      window.location.href = this.value;
+    }
+  });
+</script>
