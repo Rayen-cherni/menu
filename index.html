@@ -1,26 +1,29 @@
 <select id="serviceSelect" name="service">
   <option value="" selected disabled>Veuillez sélectionner un service</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/services-peintre-interieur-exterieur/">Peintre intérieur extérieur deco…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/sol-parquet-marbre-carrelage/">Sol parquet marbre carrelage…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/plombier-qualifie-installation-reparation/">Plombier</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/services-electricien-professionnel/">Électricien</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/bricolage-petit-travaux/">Bricolage et petit travaux…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/maconnerie-construction-renovation/">Maçon construction rénovation piscine, toiture…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/alarme-securite-gardiennage-surveillance/">Alarme Sécurité gardiennage surveillance</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/jardinier-paysagiste-amenagement-exterieur/">Jardinier paysagiste aménagement extérieur</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/plaquiste-cloison-platrier/">Plaquiste cloison plâtrier</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/panneaux-solaires-photovoltaiques/">Panneau solaire photovoltaïque installation…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/diagnostic-performance-energetique-dpe/">Diganostiqueur auditeur énergétique (DPE)</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/traitement-des-nuisibles/">Traitement des nuisibles</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/service-nettoyage/">Nettoyage</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/installation-fenetres-stores/">Porte fenêtre store volet pergola véranda…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/pompe-a-chaleur-climatisation-chauffage/">Pompe à chaleur climatisation chauffage…</option>
-  <option value="https://mrtbvgr.cluster023.hosting.ovh.net/menuisier-amenagement-dressing-cuisine/">Ferronnier portail serrurerie Menuisier aménagement dressing cuisine…</option>
+  <option value="https://plateformetravaux.com/services-peintre-interieur-exterieur/">Peintre intérieur extérieur deco…</option>
+  <option value="https://plateformetravaux.com/sol-parquet-marbre-carrelage/">Sol parquet marbre carrelage…</option>
+  <option value="https://plateformetravaux.com/plombier-qualifie-installation-reparation/">Plombier</option>
+  <option value="https://plateformetravaux.com/services-electricien-professionnel/">Électricien</option>
+  <option value="https://plateformetravaux.com/bricolage-petit-travaux/">Bricolage et petit travaux…</option>
+  <option value="https://plateformetravaux.com/maconnerie-construction-renovation/">Maçon construction rénovation piscine, toiture…</option>
+  <option value="https://plateformetravaux.com/alarme-securite-gardiennage-surveillance/">Alarme Sécurité gardiennage surveillance</option>
+  <option value="https://plateformetravaux.com/jardinier-paysagiste-amenagement-exterieur/">Jardinier paysagiste aménagement extérieur</option>
+  <option value="https://plateformetravaux.com/plaquiste-cloison-platrier/">Plaquiste cloison plâtrier</option>
+  <option value="https://plateformetravaux.com/panneaux-solaires-photovoltaiques/">Panneau solaire photovoltaïque installation…</option>
+  <option value="https://plateformetravaux.com/diagnostic-performance-energetique-dpe/">Diganostiqueur auditeur énergétique (DPE)</option>
+  <option value="https://plateformetravaux.com/traitement-des-nuisibles/">Traitement des nuisibles</option>
+  <option value="https://plateformetravaux.com/service-nettoyage/">Nettoyage</option>
+  <option value="https://plateformetravaux.com/installation-fenetres-stores/">Porte fenêtre store volet pergola véranda…</option>
+  <option value="https://plateformetravaux.com/pompe-a-chaleur-climatisation-chauffage/">Pompe à chaleur climatisation chauffage…</option>
+  <option value="https://plateformetravaux.com/menuisier-amenagement-dressing-cuisine/">Menuisier aménagement dressing cuisine…</option>
+  <option value="https://plateformetravaux.com/ferronnier-portail-serrurerie/">Ferronnier Portail Serrurerie</option>
 </select>
+
 <script>
   document.getElementById('serviceSelect').addEventListener('change', function() {
-    if (this.value && this.value !== "") {
-      window.open(this.value);
+    if (this.value) {
+      // Redirect using window.location.href
+      window.location.href = this.value;
     }
   });
 </script>
