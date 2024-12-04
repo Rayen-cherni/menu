@@ -1,5 +1,5 @@
 <h1>Code 1</h1>
-<select id="serviceSelect" name="service">
+<select id="serviceSelect1" name="service">
   <option value="" selected disabled>Veuillez sélectionner un service</option>
   <option value="https://plateformetravaux.com/services-peintre-interieur-exterieur/">Peintre intérieur extérieur deco…</option>
   <option value="https://plateformetravaux.com/sol-parquet-marbre-carrelage/">Sol parquet marbre carrelage…</option>
@@ -29,7 +29,7 @@
   });
 </script>
 <h1>Code 2</h1>
-<select id="serviceSelect" name="service">
+<select id="serviceSelect2" name="service">
   <option value="" selected disabled>Veuillez sélectionner un service</option>
   <option value="https://plateformetravaux.com/services-peintre-interieur-exterieur/">Peintre intérieur extérieur deco…</option>
   <option value="https://plateformetravaux.com/sol-parquet-marbre-carrelage/">Sol parquet marbre carrelage…</option>
@@ -53,17 +53,17 @@
 <button id="openServiceButton" style="display: none;">Ouvrir le service</button>
 
 <script>
-  const serviceSelect = document.getElementById('serviceSelect');
+  const serviceSelect2 = document.getElementById('serviceSelect2');
   const openServiceButton = document.getElementById('openServiceButton');
 
-  serviceSelect.addEventListener('change', function() {
+  serviceSelect2.addEventListener('change', function() {
     if (this.value) {
       openServiceButton.style.display = 'inline-block';
     }
   });
 
   openServiceButton.addEventListener('click', function() {
-    const selectedService = serviceSelect.value;
+    const selectedService = serviceSelect2.value;
     if (selectedService) {
       window.open(selectedService, '_blank');
     }
